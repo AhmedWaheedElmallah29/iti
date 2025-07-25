@@ -9,6 +9,8 @@ const SignIn = () => {
     e.preventDefault();
     console.log("Email:", email);
     console.log("Password:", password);
+    setEmail("");
+    setPassword("");
   };
 
   return (
@@ -48,9 +50,7 @@ const SignIn = () => {
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-            <button type="submit" className="signinbtn">
-              Sign In
-            </button>
+            <button className="signinbtn">Sign In</button>
             <button type="button" className="register">
               Register Now
             </button>

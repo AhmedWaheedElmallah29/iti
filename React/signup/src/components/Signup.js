@@ -19,6 +19,12 @@ const Signup = () => {
     console.log("Email:", email);
     console.log("Phone:", phone);
     console.log("Password:", password);
+    setFirstName("");
+    setLastName("");
+    setPhone("");
+    setEmail("");
+    setPassword("");
+    setConfirmPassword("");
   };
 
   return (
